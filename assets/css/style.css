@@ -1,15 +1,16 @@
 :root {
     --white: #FFFFFF;
     --black: #000000;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 20px;
+    --sm: 13px;
+    --md: 14px;
+    --lg: 15px;
 }
 
 * {
     margin: 0;
     padding: 0;
-        
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: var(--sm);
 }
 
 a {
@@ -43,6 +44,7 @@ header nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-size: var(--sm);
 }
 
 .nav-menu-icon{
@@ -85,7 +87,7 @@ main{
     border-radius: 50px;
     display: flex;
     justify-content: space-evenly;
-    align-items: stretch;
+    align-items: center;
 }
 
 .main-buttons{
@@ -94,10 +96,126 @@ main{
 }
 
 #search-text-input{
-    width: 438px;
+    width: 478px;
     border: none;
     outline: none;
 }
 
 .main-input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
 }
+
+.search-icon{
+    background-image: url(https://img.icons8.com/android/24/000000/search.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+}
+
+.microphone-icon{
+    background-image: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+}
+
+.main-buttons{
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main-buttons button{
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 16px;
+    font-size: var(--md);
+    background-color: #f8f9fa;
+    color: #3c4043;
+    box-sizing: border-box;
+}
+
+.main-buttons button:hover{
+    border: 1px solid #dadce0;
+    box-sizing: border-box;
+    height: 33px;
+    padding: 9px 15px;
+}
+
+.offered-text{
+    margin-top: 32px;
+    font-size: var(--sm);
+}
+
+.offered-text a{
+    color: #1a0dab;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    color: #70757a;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    align-items: flex-start;
+}
+
+.country-footer{
+    font-size: var(--lg);
+    height: 48px;
+    padding-left: 48px;
+    align-items: center;
+    display: flex;
+}
+
+.footer-bottom-container{
+    border-top: 1px solid #dadce0;
+    height: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-left-col{
+    display: flex;
+    gap: 48px;
+    padding-left: 48px;
+}
+
+.footer-left-col a{
+    font-size: var(--md);
+    color: #70757a;
+}
+
+.footer-left-col a:hover{
+    text-decoration: underline;    
+}
+
+.footer-right-col{
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    padding-right: 50px;
+}
+
+.footer-right-col a{
+    font-size: var(--md);
+    color: #70757a;
+}
+
+.footer-right-col a:hover{
+    text-decoration: underline;
+}
+
+
